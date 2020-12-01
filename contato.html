@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STEVEJOBS</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+    <link rel="stylesheet" href="css/contato.css" />
+    <script defer src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
+    <script defer src="js/main.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <a class="logo" href="#"
+          ><h3>STEVE <span contenteditable="true">JOBS</span></h3></a
+        >
+        <ul class="nav-list">
+          <div class="close"><img src="imagens/close-24px.svg" alt="" /></div>
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="biografia.html" class="nav-link">Biografia</a>
+          </li>
+          <li class="nav-item">
+            <a href="galeria.html" class="nav-link">Galeria</a>
+          </li>
+          <li class="nav-item">
+            <a href="citacao.html" class="nav-link">Citações</a>
+          </li>
+          <li class="nav-item">
+            <a href="apresentacao.html" class="nav-link">Apresentação</a>
+          </li>
+          <li class="nav-item">
+            <a href="contato.html" class="nav-link">Contato</a>
+          </li>
+        </ul>
+        <div class="hamburguer-menu">
+          <div class="menu">
+            <div class="hamburger-menu">
+              <div class="line line-1"></div>
+              <div class="line line-2"></div>
+              <div class="line line-3"></div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="contact" id="contact">
+        <div class="container">
+          <div class="top">
+            <div class="apple">
+              <img class="img1" src="imagens/apple.png" alt="" />
+            </div>
+            <div class="section-heading">
+              <h1>Register</h1>
+            </div>
+          </div>
+          <form action="">
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter your name..."
+              required
+            />
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter your email..."
+              required
+            />
+            <label for="password">Password:</label>
+            <input type="password" value="password" id="password" required />
+          </form>
+        </div>
+        <div class="button"><a href="index.html">Register</a></div>
+        <div class="social-media-nav">
+          <ul class="social-list-contact">
+            <li>
+              <a
+                href="https://www.facebook.com/ricardojorge.cunhacosta"
+                target="_blank"
+                class="icon-link"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/ricardo-costa-69649091/"
+                target="_blank"
+                class="icon-link"
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://twitter.com/richardc78"
+                target="_blank"
+                class="icon-link"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://codepen.io/ricardocosta78"
+                target="_blank"
+                class="icon-link"
+              >
+                <i class="fab fa-codepen"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/ricardocosta78"
+                target="_blank"
+                class="icon-link"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="assinatura">
+        <img src="imagens/Assinatura.png" alt="" />
+      </div>
+    </footer>
+    <script>
+      import Swup from 'swup';
+      const swup = new Swup();
+    </script>
+  </body>
+</html>
