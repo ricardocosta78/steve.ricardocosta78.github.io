@@ -330,30 +330,48 @@ article {
   display: none;
   background: linear-gradient(145deg, var(--grey), #333, #000);
 }
-article .card {
+
+article .grid {
+  margin: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+article .grid .card-img {
   width: 100%;
   height: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  margin: 1.5rem 1rem;
+  justify-content: center;
+  margin: 3rem 1rem;
   border: 1px solid var(--gray-dark);
   border-radius: 40px;
   background: #364954;
   box-shadow: 17px 17px 34px #161d22, -7px -7px 34px #567586;
 }
-article .card img {
-  width: 20rem;
-  height: 20rem;
+article .grid .card-img img {
+  width: 30rem;
+  height: 30rem;
   margin: 3rem 0 3rem 0;
   padding: 3rem;
   border-radius: 40px;
   background: #364954;
   box-shadow: inset 17px 17px 34px #161d22, inset -17px -17px 34px #567586;
 }
-
-article .card h3 {
+article .grid .card-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+article .grid .card-text h3 {
   font-size: 3rem;
   padding: 1rem;
   text-transform: uppercase;
@@ -366,7 +384,7 @@ article .card h3 {
   letter-spacing: 3px;
 }
 
-article .card p {
+article .grid .card-text p {
   font-size: 1.5rem;
   text-align: center;
   margin: 1.5rem 2.5rem;
@@ -376,7 +394,7 @@ article .card p {
   box-shadow: inset 17px 17px 34px #161d22, inset -17px -17px 34px #567586;
 }
 
-article .card a {
+article .grid .card-text a {
   font-size: 2rem;
   text-decoration: none;
   color: var(--grey);
@@ -390,7 +408,7 @@ article .card a {
   text-transform: uppercase;
   transition: var(--transition);
 }
-article .card a:hover {
+article .grid .card-text a:hover {
   color: var(--gray-dark);
   font-weight: 700;
   background-color: var(--grey);
@@ -416,18 +434,39 @@ footer {
   margin: 0 auto;
 }
 
+@media (max-width: 768px) {
+  article .grid .card-img {
+    margin: 0;
+  }
+  article .grid .card-img img {
+    width: 25rem;
+    height: 25rem;
+    margin: 1rem;
+  }
+}
+
+@media (max-width: 630px) {
+  article .grid .card-img img {
+    width: 20rem;
+    height: 20rem;
+  }
+}
 @media (max-width: 550px) {
-  article .card img {
+  article .grid .card-img img {
     width: 15rem;
     height: 15rem;
     margin: 1rem 0;
   }
-  article .card h3 {
+  article .grid .card-text h3 {
     font-size: 2rem;
   }
-  article .card p{
+  article .grid .card-text p {
     font-size: 1.2rem;
   }
-  article .card a {
-    font-size: 1.5rem;}
+  article .grid .card-text a {
+    font-size: 1.5rem;
+  }
+  .nav a h3 {
+    margin-left: 3rem;
+  }
 }

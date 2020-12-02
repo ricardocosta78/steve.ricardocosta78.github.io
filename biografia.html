@@ -71,7 +71,7 @@
             Began later that year when Wozniak, a self-educated electronics
             engineer, started to build his original “blue boxes”
           </p>
-          <a href="#card1" onclick="mostrarCard1()">More</a>
+          <a href="#card1" onclick="mostrar('card1')">More</a>
         </div>
         <div class="card">
           <img
@@ -83,7 +83,7 @@
             NeXT products to the financial, scientific, and academic community,
             highlighting its innovative, experimental.
           </p>
-          <a href="#card2" onclick="mostrarCard2()">More</a>
+          <a href="#card2" onclick="mostrar('card2')">More</a>
         </div>
         <div class="card">
           <img
@@ -95,7 +95,7 @@
             Almost as soon as Apple had started selling its first computers,
             Wozniak moved on from the Apple.
           </p>
-          <a href="#card3" onclick="mostrarCard3()">More</a>
+          <a href="#card3" onclick="mostrar('card3')">More</a>
         </div>
         <div class="card">
           <img
@@ -107,109 +107,124 @@
             The iPhone 5 is a smartphone that was designed and marketed by Apple
             Inc. It is the 6th generation iPhone.
           </p>
-          <a href="#card4" onclick="mostrarCard4()">More</a>
+          <a href="#card4" onclick="mostrar('card4')">More</a>
         </div>
       </div>
     </main>
     <article id="card1">
-      <div class="card">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Blue_Box_in_museum.jpg"
-          alt=""
-        />
-
-        <h3>BLUE BOX</h3>
-        <p>
-          Began later that year when Wozniak, a self-educated electronics
-          engineer, started to build his original “blue boxes”
-        </p>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni
-          eligendi reprehenderit iure aliquid voluptatibus eum praesentium
-          dignissimos, laborum non doloremque at, reiciendis, assumenda
-          consequuntur. Tenetur deserunt, laborum vitae vel veniam officia est
-          repellendus ab assumenda quam soluta quaerat perferendis tempore
-          facilis repellat modi architecto natus illum dolores saepe? Voluptatem
-          omnis obcaecati iure illo soluta perferendis architecto ad, quos ea
-          culpa quae rerum ullam fugiat libero quibusdam est reiciendis nemo?
-          Fugit.
-        </p>
-        <a href="grid" onclick="esconder()">Go back</a>
+      <div class="grid">
+        <div class="card-img">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Blue_Box_in_museum.jpg"
+            alt=""
+          />
+        </div>
+        <div class="card-text">
+          <h3>BLUE BOX</h3>
+          <p>
+            Began later that year when Wozniak, a self-educated electronics
+            engineer, started to build his original “blue boxes”
+          </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni
+            eligendi reprehenderit iure aliquid voluptatibus eum praesentium
+            dignissimos, laborum non doloremque at, reiciendis, assumenda
+            consequuntur. Tenetur deserunt, laborum vitae vel veniam officia est
+            repellendus ab assumenda quam soluta quaerat perferendis tempore
+            facilis repellat modi architecto natus illum dolores saepe?
+            Voluptatem omnis obcaecati iure illo soluta perferendis architecto
+            ad, quos ea culpa quae rerum ullam fugiat libero quibusdam est
+            reiciendis nemo? Fugit.
+          </p>
+          <a href="#main" onclick="esconder()">Go back</a>
+        </div>
       </div>
     </article>
     <article id="card2">
-      <div class="card">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/NeXT_logo.svg/1024px-NeXT_logo.svg.png"
-          alt=""
-        />
-        <h3>NEXT</h3>
-        <p>
-          NeXT products to the financial, scientific, and academic community,
-          highlighting its innovative, experimental.
-        </p>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni
-          eligendi reprehenderit iure aliquid voluptatibus eum praesentium
-          dignissimos, laborum non doloremque at, reiciendis, assumenda
-          consequuntur. Tenetur deserunt, laborum vitae vel veniam officia est
-          repellendus ab assumenda quam soluta quaerat perferendis tempore
-          facilis repellat modi architecto natus illum dolores saepe? Voluptatem
-          omnis obcaecati iure illo soluta perferendis architecto ad, quos ea
-          culpa quae rerum ullam fugiat libero quibusdam est reiciendis nemo?
-          Fugit.
-        </p>
-        <a href="grid" onclick="esconder()">Go Back</a>
+      <div class="grid">
+        <div class="card-img">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/NeXT_logo.svg/1024px-NeXT_logo.svg.png"
+            alt=""
+          />
+        </div>
+        <div class="card-text">
+          <h3>NEXT</h3>
+          <p>
+            NeXT products to the financial, scientific, and academic community,
+            highlighting its innovative, experimental.
+          </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni
+            eligendi reprehenderit iure aliquid voluptatibus eum praesentium
+            dignissimos, laborum non doloremque at, reiciendis, assumenda
+            consequuntur. Tenetur deserunt, laborum vitae vel veniam officia est
+            repellendus ab assumenda quam soluta quaerat perferendis tempore
+            facilis repellat modi architecto natus illum dolores saepe?
+            Voluptatem omnis obcaecati iure illo soluta perferendis architecto
+            ad, quos ea culpa quae rerum ullam fugiat libero quibusdam est
+            reiciendis nemo? Fugit.
+          </p>
+          <a href="#main" onclick="esconder()">Go Back</a>
+        </div>
       </div>
     </article>
     <article id="card3">
-      <div class="card">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Apple_Computer_Logo_rainbow.svg/800px-Apple_Computer_Logo_rainbow.svg.png"
-          alt=""
-        />
-        <h3>APPLE II</h3>
-        <p>
-          Almost as soon as Apple had started selling its first computers,
-          Wozniak moved on from the Apple.
-        </p>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni
-          eligendi reprehenderit iure aliquid voluptatibus eum praesentium
-          dignissimos, laborum non doloremque at, reiciendis, assumenda
-          consequuntur. Tenetur deserunt, laborum vitae vel veniam officia est
-          repellendus ab assumenda quam soluta quaerat perferendis tempore
-          facilis repellat modi architecto natus illum dolores saepe? Voluptatem
-          omnis obcaecati iure illo soluta perferendis architecto ad, quos ea
-          culpa quae rerum ullam fugiat libero quibusdam est reiciendis nemo?
-          Fugit.
-        </p>
-        <a href="grid" onclick="esconder()">Go Back</a>
+      <div class="grid">
+        <div class="card-img">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Apple_Computer_Logo_rainbow.svg/800px-Apple_Computer_Logo_rainbow.svg.png"
+            alt=""
+          />
+        </div>
+        <div class="card-text">
+          <h3>APPLE II</h3>
+          <p>
+            Almost as soon as Apple had started selling its first computers,
+            Wozniak moved on from the Apple.
+          </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni
+            eligendi reprehenderit iure aliquid voluptatibus eum praesentium
+            dignissimos, laborum non doloremque at, reiciendis, assumenda
+            consequuntur. Tenetur deserunt, laborum vitae vel veniam officia est
+            repellendus ab assumenda quam soluta quaerat perferendis tempore
+            facilis repellat modi architecto natus illum dolores saepe?
+            Voluptatem omnis obcaecati iure illo soluta perferendis architecto
+            ad, quos ea culpa quae rerum ullam fugiat libero quibusdam est
+            reiciendis nemo? Fugit.
+          </p>
+          <a href="#main" onclick="esconder()">Go Back</a>
+        </div>
       </div>
     </article>
     <article id="card4">
-      <div class="card">
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/IPhone_5.png/800px-IPhone_5.png"
-          alt=""
-        />
-        <h3>Iphone 5</h3>
-        <p>
-          The iPhone 5 is a smartphone that was designed and marketed by Apple
-          Inc. It is the 6th generation iPhone.
-        </p>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni
-          eligendi reprehenderit iure aliquid voluptatibus eum praesentium
-          dignissimos, laborum non doloremque at, reiciendis, assumenda
-          consequuntur. Tenetur deserunt, laborum vitae vel veniam officia est
-          repellendus ab assumenda quam soluta quaerat perferendis tempore
-          facilis repellat modi architecto natus illum dolores saepe? Voluptatem
-          omnis obcaecati iure illo soluta perferendis architecto ad, quos ea
-          culpa quae rerum ullam fugiat libero quibusdam est reiciendis nemo?
-          Fugit.
-        </p>
-        <a href="grid" onclick="esconder()">Go Back</a>
+      <div class="grid">
+        <div class="card-img">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/IPhone_5.png/800px-IPhone_5.png"
+            alt=""
+          />
+        </div>
+        <div class="card-text">
+          <h3>Iphone 5</h3>
+          <p>
+            The iPhone 5 is a smartphone that was designed and marketed by Apple
+            Inc. It is the 6th generation iPhone.
+          </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni
+            eligendi reprehenderit iure aliquid voluptatibus eum praesentium
+            dignissimos, laborum non doloremque at, reiciendis, assumenda
+            consequuntur. Tenetur deserunt, laborum vitae vel veniam officia est
+            repellendus ab assumenda quam soluta quaerat perferendis tempore
+            facilis repellat modi architecto natus illum dolores saepe?
+            Voluptatem omnis obcaecati iure illo soluta perferendis architecto
+            ad, quos ea culpa quae rerum ullam fugiat libero quibusdam est
+            reiciendis nemo? Fugit.
+          </p>
+          <a href="#main" onclick="esconder()">Go Back</a>
+        </div>
       </div>
     </article>
     <footer>

@@ -12,43 +12,19 @@ close.addEventListener('click',function(){
     header.classList.remove('menu-open')
 })
 
-function mostrarCard1(){
-    document.getElementById('card1').style.display='flex'
-    document.getElementById('card1').style.alignItems="center"
-    document.getElementById('card1').style.justifyContent = "center"
-
-    document.getElementById('card2').style.display='none'
-    document.getElementById('card3').style.display='none'
-    document.getElementById('card4').style.display='none'
+function mostrar(id){
+    esconder();
+    
+    document.getElementById(id).style.display='flex'
+    document.getElementById(id).style.alignItems="center"
+    document.getElementById(id).style.justifyContent = "center"
     document.getElementById('main').style.display='none'
 }
 
-function mostrarCard2(){
-    document.getElementById('card2').style.display='flex'
-    document.getElementById('card2').style.alignItems="center"
-    document.getElementById('card2').style.justifyContent = "center"
+function esconder(){
+    document.getElementById('card1').style.display='none'
+    document.getElementById('card2').style.display='none'
     document.getElementById('card3').style.display='none'
     document.getElementById('card4').style.display='none'
-    document.getElementById('card1').style.display='none'
-    document.getElementById('main').style.display='none'
+    document.getElementById('main').style.display='flex'
 }
-function mostrarCard3(){
-    document.getElementById('card3').style.display='flex'
-    document.getElementById('card3').style.alignItems="center"
-    document.getElementById('card3').style.justifyContent = "center"
-    document.getElementById('card2').style.display='none'
-    document.getElementById('card4').style.display='none'
-    document.getElementById('card1').style.display='none'
-    document.getElementById('main').style.display='none'
-}
-function mostrarCard4(){
-    document.getElementById('card4').style.display='inline'
-    document.getElementById('card4').style.display='flex'
-    document.getElementById('card4').style.alignItems="center"
-    document.getElementById('card4').style.justifyContent = "center"
-    document.getElementById('card3').style.display='none'
-    document.getElementById('card2').style.display='none'
-    document.getElementById('card1').style.display='none'
-    document.getElementById('main').style.display='none'
-}
-
