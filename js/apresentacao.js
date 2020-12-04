@@ -14,7 +14,7 @@ function animation(){
     setTimeout(html.addEventListener('animationend',()=>{
         
         a.innerHTML ='TRY <span>AGAIN</span>';
-        a.setAttribute('href','index.html');
+        a.setAttribute('href','home.html');
         }),1000)
 }
 
